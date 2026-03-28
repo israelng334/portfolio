@@ -45,10 +45,3 @@ The portfolio automatically fetches repositories from GitHub and displays:
 - **Phone**: +1-829-789-2021
 - **Location**: Santo Domingo, República Dominicana
 
-## 🤝 Contributing
-
-Feel free to fork this project and make it your own! If you have suggestions for improvements, please open an issue or submit a pull request.
-
----
-
-Made with ❤️ by Israel de la Cruz

@@ -243,7 +243,7 @@ class PortfolioManager {
     }
 
     try {
-      // Check cache first
+
       const cacheKey = `projects_${username}`;
       const cacheExpiry = 10 * 60 * 1000; // 10 minutes
       const cached = this.projectsCache.get(cacheKey);
@@ -272,7 +272,6 @@ class PortfolioManager {
         .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
         .slice(0, 12); // Limit to 12 most recent projects
 
-      // Cache the results
       this.projectsCache.set(cacheKey, {
         data: filteredRepos,
         timestamp: Date.now()
@@ -316,7 +315,6 @@ class PortfolioManager {
       projectsGrid.appendChild(projectCard);
     });
 
-    // Trigger scroll animations for new cards
     setTimeout(() => {
       this.setupScrollAnimations();
     }, 100);
